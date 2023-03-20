@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Medication Reminder</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div>
+      <h2>Medication Reminder</h2>
+      <form>
+        <div>
+          <label>Select medication:</label>
+          <div>
+            <input type="checkbox" name="medication" value="Aspirin" />Aspirin
+          </div>
+          <div>
+            <input type="checkbox" name="medication" value="Ibuprofen" />Ibuprofen
+          </div>
+          <div>
+            <input type="checkbox" name="medication" value="Acetaminophen" />Acetaminophen
+          </div>
+        </div>
+        <div>
+          <label>Select reminder time:</label>
+          <input type="time" name="reminder-time" />
+        </div>
+        <button type="button" id="set-reminder-btn">Set Reminder</button>
+        <p id="reminder-message"></p>
+      </form>
+      <table id="medication-table">
+        <thead>
+          <tr>
+            <th>Medication</th>
+            <th>Reminder Time</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+    
+
+    <script src="script.js"></script>
+  </body>
+</html>
